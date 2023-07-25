@@ -1,0 +1,504 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	color: gray;
+	margin: 0px
+}
+header{
+	width: 100%;
+	height: 50px;
+	min-height: 50px;
+	box-shadow: 5px 5px 5px lightgray;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	background-color:rgba(255,251,251,0.90)
+}
+.logo{
+	margin-top: 8px
+}
+.menu ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	display: flex;
+}
+.menu{
+	margin-top: 11px;
+}
+.menu ul li .menu-item{
+	padding: 5px 10px;
+	border-radius: 50px;
+	display: block
+}
+.menu ul li .menu-item:hover{
+	background-color: orange;
+	color: white;
+}
+.menu ul li .menu-item.active{
+	background-color: mediumpurple;
+	color: white;
+}
+#home{
+	width: 100%;
+	min-height: 1000px;
+	padding-top: 80px;
+	background:url("../img/bg-header.png"),url("../img/profile.png");
+	background-repeat: no-repeat;
+	background-position: left top, bottom right;
+}
+#home h1{
+	color: black;
+	font-size: 40px
+}
+#home h3{
+	color: black;
+	font-size: 20px
+}
+.pt-50{
+	padding-top: 350px
+}
+#about{
+	width: 100%;
+	min-height: 800px;
+	padding-top: 100px;
+}
+#about h1{
+	font-size: 150px;
+	color: black;
+	font-weight: bold;
+	margin: 0px 0px -30px 0px;
+}
+#about h3{
+	letter-spacing: 30px;
+	color: black;
+}
+.of-work{
+	color: black;
+	font-size: 25px;
+	font-weight: bold;
+	margin-top: 90px;
+}
+.p-10{
+	padding: 7px;
+}
+.bo-goc{
+	border-radius: 10px
+}
+#about h2{
+	color: black;
+	font-size: 20px;
+	font-weight: bold;
+}
+.mau-do{
+	color: red;
+}
+#skill{
+	width: 100%;
+	min-height: 800px;
+	padding-top: 80px;
+}
+#skill h1{
+	color: black;
+	font-size: 40px
+}
+#skill h4{
+	color: black;
+	font-size: 20px;
+	margin-bottom: -5px
+}
+.propress{
+	width: 100%;
+	height: 8px;
+	background-color: lightgray;
+	border-radius: 10px;
+}
+.bar{
+	height: 8px;
+	border-radius: 10px
+}
+.mau-den{
+	color: black;
+}
+/* Style the tab */
+#skill .tab {
+  overflow: hidden;
+  border: 1px solid #5429E5;
+  border-radius: 10px;
+	margin-top: 25px;
+	display: flex
+}
+
+/* Style the buttons inside the tab */
+#skill .tab button {
+  background-color: inherit;
+	width: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+#skill .tab button:hover {
+  background-color:rgba(49,108,228,0.30);
+}
+
+/* Create an active/current tablink class */
+#skill .tab button.active {
+  background-color:rgba(49,108,228,1.00);
+}
+
+/* Style the tab content */
+#skill .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+#services{
+	width: 100%;
+	min-height: 800px;
+	padding-top: 80px;
+}
+#services .service{
+	width: 100%;
+	min-height: 150px;
+	display: flex;
+	
+}
+
+.service-icon{
+	width: 200px;
+	height: 150px;
+	border: 1px solid red;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center
+}
+.service-icon i{
+font-size: 50px;
+color: red;
+	transition: all 0.7s;
+}
+.service:hover .service-icon i{
+	font-size: 80px;
+}
+.service-text{
+	width: 100%;
+	padding-left: 10px;
+	
+}
+.service:hover .service-text{
+	background-color: red;
+	color: white;
+}
+#services h1{
+	color: black;
+	font-size: 30px;
+	font-weight: bold;
+}
+#services h2{
+	font-size: 20px;
+	font-weight: bold;
+}
+#project{
+	width: 100%;
+	min-height: 800px;
+	padding-top: 80px;
+	background-color: white;
+}
+.box{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center
+}
+#project .box h1{
+	color: black;
+	font-size: 30px;
+	font-weight: bold;
+}
+/* Style the tab */
+#project .tab {
+	
+}
+
+/* Style the buttons inside the tab */
+#project .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+#project .tab button:hover {
+	color: mediumpurple;
+}
+
+/* Create an active/current tablink class */
+#project .tab button.active {
+  border-bottom: 1px solid mediumpurple;
+	color: mediumpurple;
+}
+
+/* Style the tab content */
+#project .tabcontent2 {
+  display: none;
+  padding: 6px 12px;
+
+}
+
+/* The Modal (background) */
+#project .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+#project .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+#project .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#project .close:hover,
+#project .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+#testimonial{
+	width: 100%;
+	min-height: 800px;
+	padding-top: 80px;
+}
+#testimonial .cam-nhan img{
+	width: 100px; 
+	height: 100px;
+	border-radius: 50%
+}
+#testimonial .vien{
+	width: 100px;
+	height: 100px;
+	border: 1px solid orange;
+	border-radius: 50%;
+	padding: 6px;
+}
+#testimonial .cam-nhan{
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+#slide .owl-dots{ position:absolute; bottom: -30px; left:45%;}
+#slide .owl-dots .owl-dot span {
+      width: 12px;
+      height: 12px; 	
+} 
+#slide .owl-dots .owl-dot span {
+      width: 10px;
+      height: 10px;
+      margin: 5px 7px;
+      background:orange;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 30px; }
+ #slide .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background: mediumpurple; }
+#slide .owl-nav { position:absolute; left:0px; top:40%; width:100%; }
+#slide .owl-nav [class*='owl-'] {
+	font-size:60px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: orange
+}
+
+#slide .owl-nav .owl-next{ position:absolute; right:-10%;}
+#slide .owl-nav .owl-prev{ position:absolute; left:-10%;}
+#slide .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color:mediumpurple;
+      text-decoration: none; }
+#slide1 .owl-dots{ position:absolute; bottom: -30px; left:48.3%;}
+#slide1 .owl-dots .owl-dot span {
+      width: 12px;
+      height: 12px; 	
+} 
+#slide1 .owl-dots .owl-dot span {
+      width: 10px;
+      height: 10px;
+      margin: 5px 7px;
+      background:orange;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 30px; }
+ #slide1 .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background: mediumpurple; }
+#slide1 .owl-nav { position:absolute; left:0px; top:30%; width:100%; }
+#slide1 .owl-nav [class*='owl-'] {
+	font-size:60px; /*background:rgba(255,255,255,.5);border:1px solid #fff; */ color: orange
+}
+
+#slide1 .owl-nav .owl-next{ position:absolute; right:-5%;}
+#slide1 .owl-nav .owl-prev{ position:absolute; left:-5%;}
+#slide1 .owl-nav [class*='owl-']:hover {
+      background:none;border: none;
+      color:mediumpurple;
+      text-decoration: none; }
+#contact{
+	width: 100%;
+	min-height: 800px;
+	padding-top: 80px;
+}
+#contact p{
+	font-weight: bold;
+}
+.text-lg{
+	font-size: 50px;
+	font-weight: bold;
+}
+.text-den{
+	color: black;
+}
+.border-bottom{
+	border-bottom: 1px solid black;
+	padding-bottom: 20px
+}
+.mg-r5{
+	margin-right: 5px;
+}
+.mg-r5:hover{
+	color: orange;
+}
+.mg-b30{
+	margin-bottom: 30px;
+}
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+}
+/*Animation*/
+.scale-in-center {
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-7-22 16:8:0
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-in-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+.slide-in-elliptic-left-fwd {
+	-webkit-animation: slide-in-elliptic-left-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+	        animation: slide-in-elliptic-left-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) 2s both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2023-7-22 16:16:30
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * @animation slide-in-elliptic-left-fwd 
+ * ----------------------------------------
+ */
+@-webkit-keyframes slide-in-elliptic-left-fwd {
+  0% {
+    -webkit-transform: translateX(-800px) rotateY(30deg) scale(0);
+            transform: translateX(-800px) rotateY(30deg) scale(0);
+    -webkit-transform-origin: -100% 50%;
+            transform-origin: -100% 50%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotateY(0) scale(1);
+            transform: translateX(0) rotateY(0) scale(1);
+    -webkit-transform-origin: 1800px 50%;
+            transform-origin: 1800px 50%;
+    opacity: 1;
+  }
+}
+@keyframes slide-in-elliptic-left-fwd {
+  0% {
+    -webkit-transform: translateX(-800px) rotateY(30deg) scale(0);
+            transform: translateX(-800px) rotateY(30deg) scale(0);
+    -webkit-transform-origin: -100% 50%;
+            transform-origin: -100% 50%;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0) rotateY(0) scale(1);
+            transform: translateX(0) rotateY(0) scale(1);
+    -webkit-transform-origin: 1800px 50%;
+            transform-origin: 1800px 50%;
+    opacity: 1;
+  }
+}
+.an{
+	overflow: hidden;
+}
